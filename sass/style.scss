@@ -20,6 +20,17 @@ body {
   font-weight: $reg-book;
 }
 
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.btn {
+  text-align: center;
+  font-family: $proxima;
+  font-weight: $bold;
+}
+
 /*** HEADER ***/
 
 .searchform {
@@ -55,7 +66,6 @@ body {
     a:active,
     a:focus {
       border: none;
-      background: none;
       color: none;
     }
     .coh-header-link {
@@ -69,8 +79,36 @@ body {
 }
 
 /*** MAIN MENU ***/
+header {
+  #access > .menu > ul {
+    display: table;
+    margin: 0 auto;
+  }
+  #access a:hover {
+    color: $dk-blue;
+  }
+  #access ul > li.current_page_item, 
+  #access ul > li.current-menu-item, 
+  #access ul > li.current_page_ancestor, 
+  #access ul > li.current-menu-ancestor {
+    background-color: $yellow;
+  }
+}
+
 #access a > span {
-  padding: 10px 20px;
+  padding: 4px 30px 5px;
+  text-transform: none;
+  font-family: $proxima;
+  font-weight: $lt;
+}
+
+#access {
+  .current-menu-item a {
+    color: $dk-blue;
+  }
+  .current-menu-item a > span {
+    font-weight: $reg-book;
+  }
 }
 
 /*** SLIDER ***/
@@ -81,7 +119,7 @@ body {
   padding: 25px 50px;
   h1 {
     color: #fff;
-    font-size: 2.1em;
+    font-size: 2.0em;
     font-weight: $lt;
     line-height: 1.25em;
     margin-bottom: 50px;
@@ -94,17 +132,59 @@ body {
     display: block;
     width: 75%;
     padding: 2px 20px;
-    font-size: 1.7em;
+    font-size: 1.6em;
   }
 }
 
-.img-fluid {
-  max-width: 100%;
-  height: auto;
+/* Homepage modules */
+
+.ppcolumn {
+  background-color: $yellow;
+  padding: 20px 40px;
+  .column-image-inside {
+    padding: 0;
+  }
+  .column-image-inside-centered {
+    padding-top: 0;
+  }
+  h5.column-header-image {
+    margin-top: 0;
+    color: $dk-blue;
+  }
+  .column-text {
+    text-align: center;
+    .pres-col-text {
+      color: #000;
+      font-size: 1.3em;
+      margin: 10px 0 27px;
+    }
+  }
 }
 
-.btn {
-  text-align: center;
-  font-family: $proxima;
-  font-weight: $bold;
+.coldisplay2 .column-text {
+  padding-left: 0;
+  padding-right: 0;
 }
+
+#pp-afterslider {
+  .column-image-inside-centered a {
+    display: block;
+  }
+  h5 {
+    font-size: 1.6em !important;
+    font-weight: $med;
+    line-height: 1.1em;
+    border-bottom: #fff 2px solid;
+    padding-bottom: 30px;
+  }
+  .pres-col-btn {
+    background: $dk-blue;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: $med;
+    padding: 10px;
+    width: 100%;
+  }
+}
+
+
