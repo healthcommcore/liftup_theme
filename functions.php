@@ -9,3 +9,11 @@ function liftup_theme_enqueue_styles() {
                   wp_get_theme()->get('Version')
   );
 }
+
+if( function_exists('register_sidebar') ) {
+  register_sidebar( array(
+    'name' => 'Below footer',
+    'id' => 'below-footer'
+  ));
+}
+

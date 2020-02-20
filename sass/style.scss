@@ -31,6 +31,24 @@ body {
   font-weight: $bold;
 }
 
+#forbottom {
+  background: #fff;
+  ul, ol {
+    margin-top: -20px;
+    padding-top: 0;
+  }
+}
+
+.entry-content {
+  margin: 0 100px;
+}
+
+.entry-meta a:hover, 
+.widget-container a:hover, 
+.footer2 a:hover {
+  border: none;
+}
+
 /*** HEADER ***/
 
 .searchform {
@@ -187,4 +205,37 @@ header {
   }
 }
 
+/*** FOOTER ***/
 
+footer {
+  padding-top: 10px;
+  padding-bottom: 100px;
+}
+
+.footer-logo {
+  margin: 0 auto;
+  text-align: center;
+  img {
+    display: inline-block;
+  }
+}
+
+.coh-footer-size {
+  width: 178px;
+}
+
+.dfci-footer-size {
+  width: 152px;
+}
+
+.below-footer {
+  text-align: center;
+  ul {
+    display: inline-block;
+  }
+  .footer-menu {
+    li { 
+      float: left;
+    }
+  }
+}
