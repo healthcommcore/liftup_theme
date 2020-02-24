@@ -86,10 +86,18 @@ a {
   border: $yellow 1px solid;
   input[type="search"] {
     height: 35px;
+    border: none;
+    padding-right: 40px;
+  }
+  .searchsubmit[type="submit"] {
+    width: 40px;
+    height: 37px;
+    background-color: $yellow;
+    color: $dk-blue;
   }
 }
 .searchform:after {
-  background-color: $yellow !important;
+  background-color: #fff !important;
 }
 
 /* Header logos */
@@ -245,11 +253,15 @@ footer {
   margin-top: 0 !important;
 }
 
+.footerfour {
+  display: flex;
+  align-items: center;
+}
+
 .footer-logo {
   margin: 0 auto;
   text-align: center;
   img {
-    display: inline-block;
   }
 }
 
@@ -262,14 +274,31 @@ footer {
 }
 
 .below-footer {
-  font-size: 0.8em;
+  color: $dk-blue;
+  font-size: 0.9em;
   text-align: center;
+  margin-top: 30px;
+  a { 
+    color: $dk-blue;
+    font-weight: $reg-book;
+    text-decoration: underline !important;
+  }
   ul {
     display: inline-block;
+    margin-bottom: 20px;
   }
   .footer-menu {
     li { 
       float: left;
+      border-left: $dk-blue 1px solid;
+      padding: 0 13px;
+      line-height: 1.1em;
     }
+    li:first-child { 
+      border: none;
+    }
+  }
+  .footer-copyright {
+    font-size: 0.8em;
   }
 }

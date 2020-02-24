@@ -13,7 +13,9 @@ function liftup_theme_enqueue_styles() {
 if( function_exists('register_sidebar') ) {
   register_sidebar( array(
     'name' => 'Below footer',
-    'id' => 'below-footer'
+    'id' => 'below-footer',
+    'before_widget' => '<div>',
+    'after_widget' => '</div>'
   ));
 }
 
