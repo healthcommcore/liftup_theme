@@ -44,12 +44,18 @@ a {
 .entry-content h2, 
 #content h2, h2{
   color: $green;
-  margin-top: 0;
-  margin-bottom: 15px;
+  margin-top: 5px;
+  margin-bottom: -1px;
   font-size: 26px !important;
   font-family: $proxima;
   font-weight: $semi;
 }
+
+.entry-content h5,
+#content h5, h5 {
+  font-family: $proxima !important;
+}
+  
 
 .img-fluid {
   max-width: 100%;
@@ -118,7 +124,7 @@ a {
     a {
       display: block;
       border: none;
-      margin-right: 20px;
+      margin-right: 40px;
     }
     a:hover,
     a:active,
@@ -156,7 +162,7 @@ header {
 #access a > span {
   padding: 4px 30px 5px;
   text-transform: none;
-  font-family: $proxima;
+  font-family: $proxima !important;
   font-weight: $reg-book;
 }
 
@@ -165,7 +171,7 @@ header {
     color: $dk-blue;
   }
   .current-menu-item a > span {
-    font-weight: $med;
+    font-weight: $semi;
   }
 }
 
@@ -235,7 +241,7 @@ header {
     display: block;
   }
   h5 {
-    font-size: 1.2em !important;
+    font-size: 1.1em !important;
     font-weight: $med;
     line-height: 1.1em;
     border-bottom: #fff 2px solid;
