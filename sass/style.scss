@@ -1,8 +1,9 @@
 /* Variables */
 $dk-blue: #19528B;
 $blue: #5C7CB1;
+$pale-blue: #E3FBFF;
 $green: #4B7B12;
-$brt-yellow: #FFE579;
+$brt-yellow: #FFE888;
 $yellow: #FAE797;
 $palest-yellow: #FFFAC1;
 $hero-mssg-bkgrd: rgba(25,82,139,.6);
@@ -46,9 +47,9 @@ a {
   color: $green;
   margin-top: 5px;
   margin-bottom: -1px;
-  font-size: 26px !important;
+  font-size: 27px !important;
   font-family: $proxima;
-  font-weight: $semi;
+  font-weight: $bold;
 }
 
 .entry-content h5,
@@ -151,6 +152,9 @@ header {
   #access a:hover {
     color: $dk-blue;
   }
+  #access ul > li a {
+    font-size: 21px !important;
+  }
   #access ul > li.current_page_item, 
   #access ul > li.current-menu-item, 
   #access ul > li.current_page_ancestor, 
@@ -163,7 +167,8 @@ header {
   padding: 4px 30px 5px;
   text-transform: none;
   font-family: $proxima !important;
-  font-weight: $reg-book;
+  font-weight: $med;
+  letter-spacing: -0.002em;
 }
 
 #access {
@@ -171,7 +176,7 @@ header {
     color: $dk-blue;
   }
   .current-menu-item a > span {
-    font-weight: $semi;
+    font-weight: $bold;
   }
 }
 
@@ -196,7 +201,7 @@ header {
 
   }
   .slider-btn {
-    background: $yellow;
+    background: $brt-yellow;
     color: $dk-blue;
     margin: 30px auto;
     display: block;
@@ -209,7 +214,7 @@ header {
 /* Homepage modules */
 
 .ppcolumn {
-  background-color: $yellow;
+  background-color: $brt-yellow;
   padding: 26px 40px;
   .column-image-inside {
     padding: 0;
@@ -242,7 +247,7 @@ header {
   }
   h5 {
     font-size: 1.1em !important;
-    font-weight: $med;
+    font-weight: $semi;
     line-height: 1.1em;
     border-bottom: #fff 2px solid;
     padding-bottom: 30px;
@@ -251,7 +256,7 @@ header {
     background: $dk-blue;
     color: #fff;
     font-size: 0.9em;
-    font-weight: $med;
+    font-weight: $semi;
     padding: 10px;
     width: 100%;
   }
@@ -306,6 +311,10 @@ footer {
 
 .dfci-footer-size {
   width: 152px;
+}
+
+.baylor-footer-size {
+  width: 66px;
 }
 
 .below-footer {
