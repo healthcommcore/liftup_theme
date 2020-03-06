@@ -161,6 +161,10 @@ header {
   #access ul > li.current-menu-ancestor {
     background-color: $brt-yellow;
   }
+  #access ul ul li.current_page_item, 
+  #access ul ul li.current-menu-item, 
+  #access ul ul li.current_page_ancestor, 
+  #access ul ul li.current-menu-ancestor,
   #access ul ul li:hover {
     background: $brt-yellow;
     a:hover {
