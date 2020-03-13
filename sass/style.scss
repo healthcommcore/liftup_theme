@@ -39,6 +39,7 @@ a {
     padding: 10px 0 10px 100px;
     margin-right: 100px;
     margin-bottom: 30px;
+    line-height: 1.1em;
   }
 }
 
@@ -50,6 +51,7 @@ a {
   font-size: 27px !important;
   font-family: $proxima;
   font-weight: $bold;
+  line-height: 1.25em;
 }
 
 .entry-content h5,
@@ -153,7 +155,7 @@ header {
     color: $dk-blue;
   }
   #access ul > li a {
-    font-size: 21px !important;
+    font-size: 20px !important;
   }
   #access ul > li.current_page_item, 
   #access ul > li.current-menu-item, 
@@ -174,7 +176,7 @@ header {
 }
 
 #access a > span {
-  padding: 4px 30px 5px;
+  padding: 4px 26px 5px;
   text-transform: none;
   font-family: $proxima !important;
   font-weight: $med;
@@ -366,32 +368,7 @@ footer {
   }
 }
 
-@media (max-width: 900px) {
-  .widget-container .header-logos .dfci-header-link,
-  .widget-container .header-logos .coh-header-link {
-    width: 100%;
-    margin-right: 0;
-  }
-  .widget-container .header-logos li {
-    width: 40%;
-    margin-right: 15px;
-  }
-  .presentation-page .slider-wrapper {
-    width: 100%;
-    margin: 0 auto;
-  }
-}
-
-@media (max-width: 800px) {
-  #branding {
-    height: auto !important;
-  }
-  .slider-text-container {
-    display: none;
-  }
-  #front-columns > div, #front-columns > li {
-    width: 96.75% !important;
-  }
+@media (max-width: 1024px) {
   #nav-toggle {
     display: block;
     float: left;
@@ -416,6 +393,38 @@ footer {
       width: 100%;
     }
   }
+}
+
+@media (max-width: 900px) {
+  .widget-container .header-logos .dfci-header-link,
+  .widget-container .header-logos .coh-header-link {
+    width: 100%;
+    margin-right: 0;
+  }
+  .widget-container .header-logos li {
+    width: 40%;
+    margin-right: 15px;
+  }
+  .presentation-page .slider-wrapper {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 800px) {
+  body {
+    font-size: 1.1em !important;
+  }
+  #branding {
+    height: auto !important;
+  }
+  .slider-text-container {
+    display: none;
+  }
+  #front-columns > div, #front-columns > li {
+    width: 96.75% !important;
+  }
+
   .widget-container .header-logos ul {
     display: block;
     width: 300px;
@@ -429,6 +438,12 @@ footer {
     .widget-area {
       margin: 10px 0;
     }
+  }
+  #content h1.entry-title {
+    font-size: 36px !important;
+  }
+  .staff-content {
+    font-size: 105%;
   }
 }
 
