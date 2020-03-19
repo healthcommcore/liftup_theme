@@ -19,3 +19,12 @@ if( function_exists('register_sidebar') ) {
   ));
 }
 
+if( function_exists('register_sidebar') ) {
+  register_sidebar( array(
+    'name' => 'Below slider',
+    'id' => 'below-slider',
+    'before_widget' => '<div>',
+    'after_widget' => '</div>'
+  ));
+}
+
