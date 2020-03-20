@@ -54,6 +54,10 @@ a {
   line-height: 1.25em;
 }
 
+h2 + .abcfslGridCntr {
+  margin-top: 7px;
+}
+
 .entry-content h5,
 #content h5, h5 {
   font-family: $proxima !important;
@@ -419,19 +423,28 @@ footer {
     #header-container {
       float: left;
     }
-    #header-container,
-    #header-widget-area {
+    #header-container {
       width: 50%;
     }
     #header-container > div {
       margin-top: 0;
       height: auto;
     }
+    #header-widget-area {
+      width: 30%;
+      margin-right: -4%;
+    }
   }
   a#logo img {
   }
   .yoyo > li.widget_search {
     display: none;
+  }
+
+  .widget-container {
+    .header-logos {
+      margin-top: 10%;
+    }
   }
   .widget-container .header-logos .dfci-header-link,
   .widget-container .header-logos .coh-header-link {
@@ -505,7 +518,11 @@ footer {
   .slider-text-container {
     display: none;
   }
-  
+  header {
+    #header-widget-area {
+      width: 43%;
+    }
+  }
   .widget-container .header-logos ul {
     display: block;
     width: 300px;
@@ -538,6 +555,12 @@ footer {
       width: 100%;
     }
   }
+  .widget-container {
+    .header-logos {
+      margin-top: 10px;
+    }
+  }
+
   .slider-text-container {
     font-size: 0.9em;
     padding: 15px 30px;
