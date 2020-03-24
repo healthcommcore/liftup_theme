@@ -191,9 +191,6 @@ header {
   .current-menu-item a {
     color: $dk-blue;
   }
-  .current-menu-item a > span {
-    font-weight: $bold;
-  }
 }
 
 #access > .menu > ul li > a:not(:only-child) > span::after {
